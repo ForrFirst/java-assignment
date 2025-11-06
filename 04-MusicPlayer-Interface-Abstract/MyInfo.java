@@ -13,13 +13,9 @@ public class MyInfo {
         smartphone.play();
     }
 }
-
-// Interface
 interface Playable {
     void play();
 }
-
-// Abstract Class
 abstract class MusicDevice {
     String brand;
     
@@ -33,8 +29,6 @@ abstract class MusicDevice {
     
     abstract void connect();
 }
-
-// CDPlayer Class
 class CDPlayer extends MusicDevice implements Playable {
     public CDPlayer(String brand) {
         super(brand);
@@ -49,7 +43,6 @@ class CDPlayer extends MusicDevice implements Playable {
     }
 }
 
-// Smartphone Class
 class Smartphone extends MusicDevice implements Playable {
     public Smartphone(String brand) {
         super(brand);
